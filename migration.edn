@@ -1,0 +1,4 @@
+{:schema "etzhayyim.migration/v1"
+ :source {:repository "etzhayyim/root" :revision "c9e7df4b327a3ee7b5ed25fb3480db45553c33ed" :path "60-apps/etzhayyim-project-kobo" :tree "04fb4588c09e1fc22158a2016244c2727f51725e" :tracked-files 12 :bytes 13542}
+ :destination {:repository "etzhayyim/com-etzhayyim-app-kobo"}
+ :identity {:allowed-additions ["README.edn" "migration.edn"]}}
