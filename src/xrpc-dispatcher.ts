@@ -1,3 +1,10 @@
+// SVELTEKIT-BACKEND-PRESERVED: moved out of svelte/ during the cljs migration; not wired.
+// Moved verbatim from svelte/src/routes/xrpc/[...path]/+server.ts (SvelteKit server route).
+// It imports '@sveltejs/kit' and './$types', so it cannot run without the SvelteKit build
+// that no longer exists after this migration. Whether to revive this XRPC->MCP router proxy
+// (e.g. as a plain Worker route) is an undecided product decision, not part of this migration.
+// Logic below is unchanged from the original SvelteKit +server.ts.
+
 import { json, type RequestEvent } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 

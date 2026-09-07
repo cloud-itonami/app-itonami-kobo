@@ -1,6 +1,14 @@
+// UNVERIFIED (2026-09-07): svelte -> cljs migration edit. No wrangler CLI
+// invocation (deploy or dev) has been run against this config.
+//   - `main` removed: it pointed at `svelte/.svelte-kit/cloudflare/_worker.js`,
+//     which no longer exists (svelte/ deleted, ADR-2608260900). This repo has no
+//     Worker entry that calls `env.ASSETS.fetch()` — `src/app.ts` is an XRPC
+//     proxy to a dispatcher, not an asset server — so no `main` is re-pointed at
+//     it. Without `main`, Wrangler serves `assets.directory` directly.
+//   - `assets.directory` now points at the built cljs SPA output (`cljs/public`).
+//   - `vars.APP_FRAMEWORK` updated to reflect the new frontend stack.
 {
   "name": "kotodama-k0b0y501",
-  "main": "svelte/.svelte-kit/cloudflare/_worker.js",
   "compatibility_date": "2025-03-17",
   "compatibility_flags": [
     "nodejs_compat",
@@ -10,7 +18,7 @@
     "APP_CAPABILITIES": "[\"agent-spawn\",\"agent-budding\",\"sporulation\",\"fermentation-dispatch\"]",
     "APP_DESCRIPTION": "kobo (酵母) — individual agent layer. Manages agent lifecycle: spawn, budding (asexual reproduction), sporulation (stress escape), and fermentation dispatch.",
     "APP_DISPLAY_NAME": "Kobo Agent Lifecycle",
-    "APP_FRAMEWORK": "sveltekit-edge-bff",
+    "APP_FRAMEWORK": "cljs-reagent-re-frame-jp-go-dds",
     "APP_NANOID": "k0b0y501",
     "APP_PERFORMER_TYPE": "service",
     "APP_UI_TYPE": "yoro",
@@ -35,7 +43,7 @@
     }
   ],
   "assets": {
-    "directory": "./svelte/.svelte-kit/cloudflare/client",
+    "directory": "./cljs/public",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
