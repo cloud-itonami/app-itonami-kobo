@@ -14,7 +14,7 @@
   migration itself changed:
 
   - `:app/relative-path` now names this file
-    (`cljs/src/kobo/app.cljs`), not the deleted Svelte one.
+    (`cljs/src/kobo/app.cljk`), not the deleted Svelte one.
   - `:app/xrpc?` is now false. This migration's wrangler.jsonc drops
     `main` (see that file's header comment and the repo README): neither
     Worker source in this repo calls `env.ASSETS.fetch`, so the XRPC
@@ -52,7 +52,7 @@
    :app/routes []
    :app/vars []
    :app/xrpc? false
-   :app/relative-path "cljs/src/kobo/app.cljs"})
+   :app/relative-path "cljs/src/kobo/app.cljk"})
 
 (rf/reg-event-db
  :initialize-db
