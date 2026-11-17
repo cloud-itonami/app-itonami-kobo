@@ -1,5 +1,5 @@
-{:schema "etzhayyim.migration/v1"
- :source {:repository "etzhayyim/root" :revision "c9e7df4b327a3ee7b5ed25fb3480db45553c33ed" :path "60-apps/etzhayyim-project-kobo" :tree "04fb4588c09e1fc22158a2016244c2727f51725e" :tracked-files 12 :bytes 13542}
- :destination {:repository "etzhayyim/com-etzhayyim-app-kobo"}
+{:schema "itonami.migration/v1"
+ :source {:repository "itonami/root" :revision "c9e7df4b327a3ee7b5ed25fb3480db45553c33ed" :path "60-apps/itonami-project-kobo" :tree "04fb4588c09e1fc22158a2016244c2727f51725e" :tracked-files 12 :bytes 13542}
+ :destination {:repository "itonami/app-itonami-kobo"}
  :identity {:allowed-additions ["README.edn" "migration.edn"]}
  :post-migration [{:date "2026-09-07" :change "svelte -> cljs (ADR-2608260900)" :note "tree no longer byte-identical to :source: svelte/ removed, cljs/ added, svelte/src/routes/xrpc/[...path]/+server.ts moved to src/xrpc-dispatcher.ts"}]}

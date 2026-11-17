@@ -1,5 +1,5 @@
 (ns kobo.app
-  "com-etzhayyim-app-kobo appview — reagent + re-frame, view built from
+  "app-itonami-kobo appview — reagent + re-frame, view built from
   jp-go-dds (デジタル庁デザインシステム) hiccup.
 
   Faithful port of the previous SvelteKit scaffold's status page
@@ -44,9 +44,9 @@
 ;; held (title/project/name/kind/routeCount/routes/vars/xrpc/relativePath).
 
 (def default-db
-  {:app/title "Ai etzhayyim Project Kobo"
-   :app/project "etzhayyim-project-kobo"
-   :app/name "etzhayyim-project-kobo"
+  {:app/title "Ai itonami Project Kobo"
+   :app/project "itonami-project-kobo"
+   :app/name "itonami-project-kobo"
    :app/kind "cloudflare surface"
    :app/route-count 0
    :app/routes []
