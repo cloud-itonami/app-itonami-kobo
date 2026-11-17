@@ -1,6 +1,6 @@
 {
-  "@context": "https://etzhayyim.com/ns/kotodama/v1",
-  "@id": "did:web:kobo.etzhayyim.com",
+  "@context": "https://itonami.cloud/ns/kotodama/v1",
+  "@id": "did:web:kobo.itonami.cloud",
   "name": "kobo",
   "nanoid": "k0b0y501",
   "project": "kobo",
@@ -14,7 +14,7 @@
     "avatar": "酵",
     "isBot": true,
     "agentType": "autonomous",
-    "operator": "etzhayyim",
+    "operator": "itonami",
     "capabilities": ["agent-spawn", "agent-budding", "sporulation", "fermentation-dispatch"],
     "protocols": ["xrpc", "mcp"]
   },
@@ -24,7 +24,7 @@
   },
   "triggers": {
     "subscribeRepos": {
-      "collections": ["com.etzhayyim.apps.kobo.agent", "com.etzhayyim.apps.kobo.prion"]
+      "collections": ["cloud.itonami.apps.kobo.agent", "cloud.itonami.apps.kobo.prion"]
     }
   }
 }

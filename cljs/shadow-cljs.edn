@@ -1,4 +1,4 @@
-;; com-etzhayyim-app-kobo — single-page app, single build/module (migrated from svelte).
+;; app-itonami-kobo — single-page app, single build/module (migrated from svelte).
 {:deps   {:aliases [:cljs :test]}
  :builds {:app  {:target :browser
                  :output-dir "public/js"
